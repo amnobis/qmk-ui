@@ -1,0 +1,28 @@
+$font: 'Montserrat', sans-serif;
+$height: 70px;
+
+.navbar-default {
+  background-color: #ffffff;
+  min-height: $height;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 24px;
+  font-family: $font;
+  font-variant: small-caps;
+  color: #222222;
+  line-height: $height/2;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: $height/4;
+}
+
+.navbar-default .navbar-nav {
+  margin-top: $height/8;
+  font-size: 18px;
+  font-variant: small-caps;
+  font-family: $font;
+}
+

@@ -1,0 +1,10 @@
+$fontSize: 18px;
+$space: 9px;
+
+.btn-default {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $fontSize;
+  padding-top: $fontSize/2;
+  margin: $space;
+}
+
