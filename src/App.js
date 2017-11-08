@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from './components/header/Header';
 import Key from './components/key/Key';
-import Footer from './components/footer/Footer';
+import DevTools from './containers/DevTools';
 
 
 class App extends Component {
@@ -17,6 +17,7 @@ class App extends Component {
         <Key/>
         <Key/>
         <Key/>
+        <DevTools/>
       </div>
     );
   }
