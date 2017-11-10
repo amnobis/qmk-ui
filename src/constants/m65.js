@@ -1,18 +1,19 @@
-layout = [
-  [K(1),    K(1),    K(1),    K(1),    K(1),    K(1),    K(1), K(1), K(1), K(1), K(1), K(1),    K(1),    K(1),   K(1), K(1)],
-  [K(1.5),  K(1),    K(1),    K(1),    K(1),    K(1),    K(1), K(1), K(1), K(1), K(1), K(1),    K(1),    K(1.5), K(1)],
-  [K(1.75), K(1),    K(1),    K(1),    K(1),    K(1),    K(1), K(1), K(1), K(1), K(1), K(1),    K(2.25), K(1)],
-  [K(2.25), K(1),    K(1),    K(1),    K(1),    K(1),    K(1), K(1), K(1), K(1), K(1), K(1.75), K(1),    K(1)],
-  [K(1.25), K(1.25), K(1.25), K(2.75), K(1.25), K(2.25), K(1), K(1), K(1), K(1), K(1), K(1)]
-];
-
 class K {
-  constructor(size, code) {
+  constructor(size) {
     this.size = size;
-    this.code = code;
   }
 
   toString() {
-    return `Size: ${this.size}, Code: ${this.code}`
+    return `Size: ${this.size}`
   }
 }
+
+const layout = [
+  [new K(1),    new K(1),    new K(1),    new K(1),    new K(1),    new K(1),    new K(1), new K(1), new K(1), new K(1), new K(1), new K(1),    new K(1),    new K(1),   new K(1), new K(1)],
+  [new K(1.5),  new K(1),    new K(1),    new K(1),    new K(1),    new K(1),    new K(1), new K(1), new K(1), new K(1), new K(1), new K(1),    new K(1),    new K(1.5), new K(1)],
+  [new K(1.75), new K(1),    new K(1),    new K(1),    new K(1),    new K(1),    new K(1), new K(1), new K(1), new K(1), new K(1), new K(1),    new K(2.25), new K(1)],
+  [new K(2.25), new K(1),    new K(1),    new K(1),    new K(1),    new K(1),    new K(1), new K(1), new K(1), new K(1), new K(1), new K(1.75), new K(1),    new K(1)],
+  [new K(1.25), new K(1.25), new K(1.25), new K(2.75), new K(1.25), new K(2.25), new K(1), new K(1), new K(1), new K(1), new K(1), new K(1)]
+];
+
+export default layout;

@@ -19,3 +19,9 @@
 
 .bg-light {
   background-color: #fafafa; }
+
+.center {
+  text-align: center; }
+
+.inline {
+  display: inline-block; }

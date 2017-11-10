@@ -1,13 +1,8 @@
 import * as ActionTypes from '../actions';
 import { combineReducers } from 'redux';
 
-// Updates an entity cache in response to any action with response.entities.
-const initialState = {
-  layout: [[]],
-  matrix: [[[]]]
-};
 
-function layout(state, action) {
+const layout = (state = [[]], action) => {
   switch (action.type) {
     case "BLAH":
       return Object.assign({}, state, {
@@ -16,9 +11,9 @@ function layout(state, action) {
     default:
       return state
   }
-}
+};
 
-function matrix(state, action) {
+function matrix(state = [[[]]], action) {
   switch (action.type) {
     case "UPDATE_KEY":
       return {
